@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="Vidly" Title="Vidly Reference Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.HomeController.About" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000031.html" LinkGroup="Vidly">About Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.AccountController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000016_overloads--.html" LinkGroup="Vidly">AccountController Constructor</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.AccountController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000017_overloads--.html" LinkGroup="Vidly">AccountController Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000015.html" LinkGroup="Vidly">AccountController Class</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.AddPhoneNumber" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000003A_overloads--.html" LinkGroup="Vidly">AddPhoneNumber Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.AddPhoneNumber" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000003B_overloads--.html" LinkGroup="Vidly">AddPhoneNumber Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.AddPhoneNumberViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000090.html" LinkGroup="Vidly">AddPhoneNumberViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ApplicationDbContext" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000007B.html" LinkGroup="Vidly">ApplicationDbContext Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ApplicationDbContext.ApplicationDbContext" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000007C.html" LinkGroup="Vidly">ApplicationDbContext Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ApplicationSignInManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000000C.html" LinkGroup="Vidly">ApplicationSignInManager Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ApplicationSignInManager.ApplicationSignInManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000000D.html" LinkGroup="Vidly">ApplicationSignInManager Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ApplicationUser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000079.html" LinkGroup="Vidly">ApplicationUser Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ApplicationUserManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000009.html" LinkGroup="Vidly">ApplicationUserManager Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ApplicationUserManager.ApplicationUserManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000000A.html" LinkGroup="Vidly">ApplicationUserManager Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.MvcApplication.Application_Start" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000054.html" LinkGroup="Vidly">Application_Start Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.IndexViewModel.BrowserRemembered" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000083.html" LinkGroup="Vidly">BrowserRemembered Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.BundleConfig" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000001.html" LinkGroup="Vidly">BundleConfig Class</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.ChangePassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000041_overloads--.html" LinkGroup="Vidly">ChangePassword Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.ChangePassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000042_overloads--.html" LinkGroup="Vidly">ChangePassword Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ChangePasswordViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000008C.html" LinkGroup="Vidly">ChangePasswordViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ResetPasswordViewModel.Code" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000073.html" LinkGroup="Vidly">Code Property {Vidly.Models.ResetPasswordViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.VerifyCodeViewModel.Code" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000061.html" LinkGroup="Vidly">Code Property {Vidly.Models.VerifyCodeViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.VerifyPhoneNumberViewModel.Code" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000093.html" LinkGroup="Vidly">Code Property {Vidly.Models.VerifyPhoneNumberViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Startup.Configuration" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000009B.html" LinkGroup="Vidly">Configuration Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Startup.ConfigureAuth" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000013.html" LinkGroup="Vidly">ConfigureAuth Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ConfigureTwoFactorViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000095.html" LinkGroup="Vidly">ConfigureTwoFactorViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ConfirmEmail" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000020.html" LinkGroup="Vidly">ConfirmEmail Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ChangePasswordViewModel.ConfirmPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000008F.html" LinkGroup="Vidly">ConfirmPassword Property {Vidly.Models.ChangePasswordViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.RegisterViewModel.ConfirmPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000006E.html" LinkGroup="Vidly">ConfirmPassword Property {Vidly.Models.RegisterViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ResetPasswordViewModel.ConfirmPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000072.html" LinkGroup="Vidly">ConfirmPassword Property {Vidly.Models.ResetPasswordViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.SetPasswordViewModel.ConfirmPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000008B.html" LinkGroup="Vidly">ConfirmPassword Property {Vidly.Models.SetPasswordViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.HomeController.Contact" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000032.html" LinkGroup="Vidly">Contact Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ApplicationSignInManager.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000000F.html" LinkGroup="Vidly">Create Method {Vidly.ApplicationSignInManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ApplicationUserManager.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000000B.html" LinkGroup="Vidly">Create Method {Vidly.ApplicationUserManager}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ApplicationDbContext.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000007D.html" LinkGroup="Vidly">Create Method {Vidly.Models.ApplicationDbContext}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ApplicationSignInManager.CreateUserIdentityAsync" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000000E.html" LinkGroup="Vidly">CreateUserIdentityAsync Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ManageLoginsViewModel.CurrentLogins" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000085.html" LinkGroup="Vidly">CurrentLogins Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.Customer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000076.html" LinkGroup="Vidly">Customer Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ViewModel.RandomMovieViewModel.Customers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000009F.html" LinkGroup="Vidly">Customers Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.DisableTwoFactorAuthentication" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000003D.html" LinkGroup="Vidly">DisableTwoFactorAuthentication Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000002E_overloads--.html" LinkGroup="Vidly">Dispose Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000048_overloads--.html" LinkGroup="Vidly">Dispose Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ExternalLoginConfirmationViewModel.Email" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000057.html" LinkGroup="Vidly">Email Property {Vidly.Models.ExternalLoginConfirmationViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ForgotPasswordViewModel.Email" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000075.html" LinkGroup="Vidly">Email Property {Vidly.Models.ForgotPasswordViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ForgotViewModel.Email" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000066.html" LinkGroup="Vidly">Email Property {Vidly.Models.ForgotViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.LoginViewModel.Email" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000068.html" LinkGroup="Vidly">Email Property {Vidly.Models.LoginViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.RegisterViewModel.Email" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000006C.html" LinkGroup="Vidly">Email Property {Vidly.Models.RegisterViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ResetPasswordViewModel.Email" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000070.html" LinkGroup="Vidly">Email Property {Vidly.Models.ResetPasswordViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.EmailService" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000005.html" LinkGroup="Vidly">EmailService Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.EnableTwoFactorAuthentication" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000003C.html" LinkGroup="Vidly">EnableTwoFactorAuthentication Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ExternalLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000027.html" LinkGroup="Vidly">ExternalLogin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ExternalLoginCallback" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000002A.html" LinkGroup="Vidly">ExternalLoginCallback Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ExternalLoginConfirmation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000002B.html" LinkGroup="Vidly">ExternalLoginConfirmation Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ExternalLoginConfirmationViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000056.html" LinkGroup="Vidly">ExternalLoginConfirmationViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ExternalLoginFailure" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000002D.html" LinkGroup="Vidly">ExternalLoginFailure Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ExternalLoginListViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000058.html" LinkGroup="Vidly">ExternalLoginListViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.FactorViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000087.html" LinkGroup="Vidly">FactorViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.FilterConfig" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000003.html" LinkGroup="Vidly">FilterConfig Class</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ForgotPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000021_overloads--.html" LinkGroup="Vidly">ForgotPassword Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ForgotPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000022_overloads--.html" LinkGroup="Vidly">ForgotPassword Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ForgotPasswordConfirmation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000023.html" LinkGroup="Vidly">ForgotPasswordConfirmation Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ForgotPasswordViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000074.html" LinkGroup="Vidly">ForgotPasswordViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ForgotViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000065.html" LinkGroup="Vidly">ForgotViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ApplicationUser.GenerateUserIdentityAsync" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000007A.html" LinkGroup="Vidly">GenerateUserIdentityAsync Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.IndexViewModel.HasPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000007F.html" LinkGroup="Vidly">HasPassword Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.HomeController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000002F.html" LinkGroup="Vidly">HomeController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.Customer.Id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000077.html" LinkGroup="Vidly">Id Property {Vidly.Models.Customer}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.Movie.Id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000099.html" LinkGroup="Vidly">Id Property {Vidly.Models.Movie}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.HomeController.Index" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000030.html" LinkGroup="Vidly">Index Method {Vidly.Controllers.HomeController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.Index" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000038.html" LinkGroup="Vidly">Index Method {Vidly.Controllers.ManageController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.IndexViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000007E.html" LinkGroup="Vidly">IndexViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.LinkLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000046.html" LinkGroup="Vidly">LinkLogin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.LinkLoginCallback" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000047.html" LinkGroup="Vidly">LinkLoginCallback Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.LogOff" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000002C.html" LinkGroup="Vidly">LogOff Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.Login" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000001B_overloads--.html" LinkGroup="Vidly">Login Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.Login" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000001A_overloads--.html" LinkGroup="Vidly">Login Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.LoginViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000067.html" LinkGroup="Vidly">LoginViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.IndexViewModel.Logins" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000080.html" LinkGroup="Vidly">Logins Property</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.ManageController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000034_overloads--.html" LinkGroup="Vidly">ManageController Constructor</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.ManageController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000035_overloads--.html" LinkGroup="Vidly">ManageController Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000033.html" LinkGroup="Vidly">ManageController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.ManageLogins" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000045.html" LinkGroup="Vidly">ManageLogins Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ManageLoginsViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000084.html" LinkGroup="Vidly">ManageLoginsViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.ManageMessageId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000049.html" LinkGroup="Vidly">ManageMessageId Enumeration</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.Movie" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000098.html" LinkGroup="Vidly">Movie Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ViewModel.RandomMovieViewModel.Movie" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000009E.html" LinkGroup="Vidly">Movie Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.MoviesController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000051.html" LinkGroup="Vidly">MoviesController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.MvcApplication" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000053.html" LinkGroup="Vidly">MvcApplication Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.Customer.Name" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000078.html" LinkGroup="Vidly">Name Property {Vidly.Models.Customer}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.Movie.Name" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000009A.html" LinkGroup="Vidly">Name Property {Vidly.Models.Movie}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ChangePasswordViewModel.NewPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000008E.html" LinkGroup="Vidly">NewPassword Property {Vidly.Models.ChangePasswordViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.SetPasswordViewModel.NewPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000008A.html" LinkGroup="Vidly">NewPassword Property {Vidly.Models.SetPasswordViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.AddPhoneNumberViewModel.Number" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000091.html" LinkGroup="Vidly">Number Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ChangePasswordViewModel.OldPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000008D.html" LinkGroup="Vidly">OldPassword Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ManageLoginsViewModel.OtherLogins" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000086.html" LinkGroup="Vidly">OtherLogins Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.LoginViewModel.Password" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000069.html" LinkGroup="Vidly">Password Property {Vidly.Models.LoginViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.RegisterViewModel.Password" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000006D.html" LinkGroup="Vidly">Password Property {Vidly.Models.RegisterViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ResetPasswordViewModel.Password" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000071.html" LinkGroup="Vidly">Password Property {Vidly.Models.ResetPasswordViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.IndexViewModel.PhoneNumber" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000081.html" LinkGroup="Vidly">PhoneNumber Property {Vidly.Models.IndexViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.VerifyPhoneNumberViewModel.PhoneNumber" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000094.html" LinkGroup="Vidly">PhoneNumber Property {Vidly.Models.VerifyPhoneNumberViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.VerifyCodeViewModel.Provider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000060.html" LinkGroup="Vidly">Provider Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ConfigureTwoFactorViewModel.Providers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000097.html" LinkGroup="Vidly">Providers Property {Vidly.Models.ConfigureTwoFactorViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.SendCodeViewModel.Providers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000005C.html" LinkGroup="Vidly">Providers Property {Vidly.Models.SendCodeViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.FactorViewModel.Purpose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000088.html" LinkGroup="Vidly">Purpose Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.MoviesController.Random" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000052.html" LinkGroup="Vidly">Random Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ViewModel.RandomMovieViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000009D.html" LinkGroup="Vidly">RandomMovieViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.Register" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000001E_overloads--.html" LinkGroup="Vidly">Register Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.Register" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000001F_overloads--.html" LinkGroup="Vidly">Register Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.BundleConfig.RegisterBundles" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000002.html" LinkGroup="Vidly">RegisterBundles Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.FilterConfig.RegisterGlobalFilters" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000004.html" LinkGroup="Vidly">RegisterGlobalFilters Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.RouteConfig.RegisterRoutes" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000011.html" LinkGroup="Vidly">RegisterRoutes Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.RegisterViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000006B.html" LinkGroup="Vidly">RegisterViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.VerifyCodeViewModel.RememberBrowser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000063.html" LinkGroup="Vidly">RememberBrowser Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.LoginViewModel.RememberMe" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000006A.html" LinkGroup="Vidly">RememberMe Property {Vidly.Models.LoginViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.SendCodeViewModel.RememberMe" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000005E.html" LinkGroup="Vidly">RememberMe Property {Vidly.Models.SendCodeViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.VerifyCodeViewModel.RememberMe" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000064.html" LinkGroup="Vidly">RememberMe Property {Vidly.Models.VerifyCodeViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.RemoveLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000039.html" LinkGroup="Vidly">RemoveLogin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.RemovePhoneNumber" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000040.html" LinkGroup="Vidly">RemovePhoneNumber Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ResetPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000025_overloads--.html" LinkGroup="Vidly">ResetPassword Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ResetPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000024_overloads--.html" LinkGroup="Vidly">ResetPassword Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.ResetPasswordConfirmation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000026.html" LinkGroup="Vidly">ResetPasswordConfirmation Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ResetPasswordViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000006F.html" LinkGroup="Vidly">ResetPasswordViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ExternalLoginListViewModel.ReturnUrl" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000059.html" LinkGroup="Vidly">ReturnUrl Property {Vidly.Models.ExternalLoginListViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.SendCodeViewModel.ReturnUrl" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000005D.html" LinkGroup="Vidly">ReturnUrl Property {Vidly.Models.SendCodeViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.VerifyCodeViewModel.ReturnUrl" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000062.html" LinkGroup="Vidly">ReturnUrl Property {Vidly.Models.VerifyCodeViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.RouteConfig" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000010.html" LinkGroup="Vidly">RouteConfig Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.ConfigureTwoFactorViewModel.SelectedProvider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000096.html" LinkGroup="Vidly">SelectedProvider Property {Vidly.Models.ConfigureTwoFactorViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.SendCodeViewModel.SelectedProvider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000005B.html" LinkGroup="Vidly">SelectedProvider Property {Vidly.Models.SendCodeViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.EmailService.SendAsync" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000006.html" LinkGroup="Vidly">SendAsync Method {Vidly.EmailService}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.SmsService.SendAsync" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000008.html" LinkGroup="Vidly">SendAsync Method {Vidly.SmsService}</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.SendCode" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000029_overloads--.html" LinkGroup="Vidly">SendCode Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.SendCode" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000028_overloads--.html" LinkGroup="Vidly">SendCode Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.SendCodeViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000005A.html" LinkGroup="Vidly">SendCodeViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.SetPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000043_overloads--.html" LinkGroup="Vidly">SetPassword Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.SetPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000044_overloads--.html" LinkGroup="Vidly">SetPassword Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.SetPasswordViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000089.html" LinkGroup="Vidly">SetPasswordViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.SignInManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000018.html" LinkGroup="Vidly">SignInManager Property {Vidly.Controllers.AccountController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.SignInManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000036.html" LinkGroup="Vidly">SignInManager Property {Vidly.Controllers.ManageController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.SmsService" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000007.html" LinkGroup="Vidly">SmsService Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Startup" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000012.html" LinkGroup="Vidly">Startup Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.IndexViewModel.TwoFactor" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000082.html" LinkGroup="Vidly">TwoFactor Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.UserManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000019.html" LinkGroup="Vidly">UserManager Property {Vidly.Controllers.AccountController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.UserManager" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000037.html" LinkGroup="Vidly">UserManager Property {Vidly.Controllers.ManageController}</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.VerifyCode" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000001C_overloads--.html" LinkGroup="Vidly">VerifyCode Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.AccountController.VerifyCode" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000001D_overloads--.html" LinkGroup="Vidly">VerifyCode Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.VerifyCodeViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000005F.html" LinkGroup="Vidly">VerifyCodeViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.VerifyPhoneNumber" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000003E_overloads--.html" LinkGroup="Vidly">VerifyPhoneNumber Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers.ManageController.VerifyPhoneNumber" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000003F_overloads--.html" LinkGroup="Vidly">VerifyPhoneNumber Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models.VerifyPhoneNumberViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000092.html" LinkGroup="Vidly">VerifyPhoneNumberViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000000.html" LinkGroup="Vidly">Vidly Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_00000000000000A0.html" LinkGroup="Vidly">Vidly Reference</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Controllers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000014.html" LinkGroup="Vidly">Vidly.Controllers Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.Models" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_0000000000000055.html" LinkGroup="Vidly">Vidly.Models Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Vidly.ViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Vidly.chm::/topic_000000000000009C.html" LinkGroup="Vidly">Vidly.ViewModel Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+
