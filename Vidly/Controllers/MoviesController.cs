@@ -1,33 +1,89 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModel;
+using Vidly.Migrations;
 
 namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
         // GET: Movies
-        public ActionResult Random()
+
+        private ApplicationDbContext _context;
+
+        public MoviesController()
         {
-            var movie = new Movie() { Name = "Shrek!" };
+            _context = new ApplicationDbContext();
+        }
 
-            var customers = new List<Customer>
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
+        public ViewResult Index()
+        {
+            var movies = _context.Movie.Include(m => m.Genre).ToList();
+
+            return View(movies);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var movie = _context.Movie.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            return View(movie);
+        }
+        public ActionResult New()
+        {
+            var genres = _context.Genre.ToList();
+            var viewModel = new MovieFormViewModel
             {
-                new Customer {Name = "Customer 1"},
-                new Customer {Name = "Customer 2"}
+                Genres = genres
             };
+            return View("MovieForm",viewModel);
+        }
 
-            var viewModel = new RandomMovieViewModel
+        [HttpPost]
+        public ActionResult Save(Movie movie)
+        {
+            if (movie.Id == 0)
+                _context.Movie.Add(movie);
+            else
+            {
+                // SingleOrDefault() is not used;because if customer is not found, it will trow an exception
+                var MovieInDb = _context.Movie.Include(g => g.Genre).Single(c => c.Id == movie.Id);
+
+                MovieInDb.Name = movie.Name;
+                MovieInDb.ReleasedDate = movie.ReleasedDate;
+                MovieInDb.GenreId = movie.GenreId;
+                MovieInDb.NumberInStock = movie.NumberInStock;
+            }
+
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Movies");
+        }
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movie.SingleOrDefault(c => c.Id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            var viewModel = new MovieFormViewModel()
             {
                 Movie = movie,
-                Customers = customers
+                Genres = _context.Genre.ToList()
             };
-
-            return View(viewModel);
+            return View("MovieForm", viewModel);
         }
 
 

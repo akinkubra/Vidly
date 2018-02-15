@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -20,6 +21,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -159,6 +161,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
@@ -169,17 +172,119 @@
     <Compile Include="Migrations\201802131444049_InitialModel.Designer.cs">
       <DependentUpon>201802131444049_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802140904060_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201802140904060_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201802140904060_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802140923187_AddMembershipType.cs" />
+    <Compile Include="Migrations\201802140923187_AddMembershipType.Designer.cs">
+      <DependentUpon>201802140923187_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802140928190_PopulateMembershipType.cs" />
+    <Compile Include="Migrations\201802140928190_PopulateMembershipType.Designer.cs">
+      <DependentUpon>201802140928190_PopulateMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802141445181_MembershipType.cs" />
+    <Compile Include="Migrations\201802141445181_MembershipType.Designer.cs">
+      <DependentUpon>201802141445181_MembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150639325_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201802150639325_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201802150639325_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150843310_addNameMembershipType.cs" />
+    <Compile Include="Migrations\201802150843310_addNameMembershipType.Designer.cs">
+      <DependentUpon>201802150843310_addNameMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150847503_SetnameMembershipTypes.cs" />
+    <Compile Include="Migrations\201802150847503_SetnameMembershipTypes.Designer.cs">
+      <DependentUpon>201802150847503_SetnameMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150858344_addBirtdateCustomer.cs" />
+    <Compile Include="Migrations\201802150858344_addBirtdateCustomer.Designer.cs">
+      <DependentUpon>201802150858344_addBirtdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150934464_classGenre.cs" />
+    <Compile Include="Migrations\201802150934464_classGenre.Designer.cs">
+      <DependentUpon>201802150934464_classGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151354266_addNullablePropertyForDateadded.cs" />
+    <Compile Include="Migrations\201802151354266_addNullablePropertyForDateadded.Designer.cs">
+      <DependentUpon>201802151354266_addNullablePropertyForDateadded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModel\MovieFormViewModel.cs" />
     <Compile Include="ViewModel\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-Vidly-20180209021104.mdf" />
+    <Content Include="App_Data\aspnet-Vidly-20180209021104_log.ldf">
+      <DependentUpon>aspnet-Vidly-20180209021104.mdf</DependentUpon>
+    </Content>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.xml" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.xml" />
+    <Content Include="bin\Microsoft.Owin.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\Vidly.dll" />
+    <Content Include="bin\Vidly.pdb" />
+    <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -189,6 +294,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map">
+      <DependentUpon>bootstrap.min.js</DependentUpon>
+    </Content>
+    <Content Include="bin\Vidly.dll.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -201,6 +310,480 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="VSdoc\bookC.gif" />
+    <Content Include="VSdoc\bookE.gif" />
+    <Content Include="VSdoc\help_index--.html" />
+    <Content Include="VSdoc\help_index1--.html" />
+    <Content Include="VSdoc\help_index2--.html" />
+    <Content Include="VSdoc\help_search--.html" />
+    <Content Include="VSdoc\help_toc--.html" />
+    <Content Include="VSdoc\index.html" />
+    <Content Include="VSdoc\leaf.gif" />
+    <Content Include="VSdoc\msdn2017\CFW.png" />
+    <Content Include="VSdoc\msdn2017\code_tab_top_left.png" />
+    <Content Include="VSdoc\msdn2017\code_tab_top_left_active.png" />
+    <Content Include="VSdoc\msdn2017\code_tab_top_right.png" />
+    <Content Include="VSdoc\msdn2017\code_tab_top_right_active.png" />
+    <Content Include="VSdoc\msdn2017\collapsed.png" />
+    <Content Include="VSdoc\msdn2017\expanded.png" />
+    <Content Include="VSdoc\msdn2017\footer_grad.png" />
+    <Content Include="VSdoc\msdn2017\friendclass.png" />
+    <Content Include="VSdoc\msdn2017\frienddelegate.png" />
+    <Content Include="VSdoc\msdn2017\friendenum.png" />
+    <Content Include="VSdoc\msdn2017\friendevent.png" />
+    <Content Include="VSdoc\msdn2017\friendfield.png" />
+    <Content Include="VSdoc\msdn2017\friendinterface.png" />
+    <Content Include="VSdoc\msdn2017\friendmethod.png" />
+    <Content Include="VSdoc\msdn2017\friendproperty.png" />
+    <Content Include="VSdoc\msdn2017\friendstructure.png" />
+    <Content Include="VSdoc\msdn2017\help_contents.png" />
+    <Content Include="VSdoc\msdn2017\help_index.png" />
+    <Content Include="VSdoc\msdn2017\help_search.png" />
+    <Content Include="VSdoc\msdn2017\msdn2017.css" />
+    <Content Include="VSdoc\msdn2017\msdn2017.js" />
+    <Content Include="VSdoc\msdn2017\namespace.png" />
+    <Content Include="VSdoc\msdn2017\privclass.png" />
+    <Content Include="VSdoc\msdn2017\privdelicate.png" />
+    <Content Include="VSdoc\msdn2017\privenum.png" />
+    <Content Include="VSdoc\msdn2017\privevent.png" />
+    <Content Include="VSdoc\msdn2017\privfield.png" />
+    <Content Include="VSdoc\msdn2017\privinterface.png" />
+    <Content Include="VSdoc\msdn2017\privmethod.png" />
+    <Content Include="VSdoc\msdn2017\privproperty.png" />
+    <Content Include="VSdoc\msdn2017\privstructure.png" />
+    <Content Include="VSdoc\msdn2017\protclass.png" />
+    <Content Include="VSdoc\msdn2017\protdeligate.png" />
+    <Content Include="VSdoc\msdn2017\protenum.png" />
+    <Content Include="VSdoc\msdn2017\protevent.png" />
+    <Content Include="VSdoc\msdn2017\protfield.png" />
+    <Content Include="VSdoc\msdn2017\protinterface.png" />
+    <Content Include="VSdoc\msdn2017\protmethod.png" />
+    <Content Include="VSdoc\msdn2017\protproperty.png" />
+    <Content Include="VSdoc\msdn2017\protstructure.png" />
+    <Content Include="VSdoc\msdn2017\pubclass.png" />
+    <Content Include="VSdoc\msdn2017\pubdeligate.png" />
+    <Content Include="VSdoc\msdn2017\pubenum.png" />
+    <Content Include="VSdoc\msdn2017\pubevent.png" />
+    <Content Include="VSdoc\msdn2017\pubextensionmethod.png" />
+    <Content Include="VSdoc\msdn2017\pubfield.png" />
+    <Content Include="VSdoc\msdn2017\pubinterface.png" />
+    <Content Include="VSdoc\msdn2017\pubmethod.png" />
+    <Content Include="VSdoc\msdn2017\puboperator.png" />
+    <Content Include="VSdoc\msdn2017\pubproperty.png" />
+    <Content Include="VSdoc\msdn2017\pubstructure.png" />
+    <Content Include="VSdoc\msdn2017\static.png" />
+    <Content Include="VSdoc\msdn2\help_contents.gif" />
+    <Content Include="VSdoc\msdn2\help_index.gif" />
+    <Content Include="VSdoc\msdn2\help_search.gif" />
+    <Content Include="VSdoc\search.js" />
+    <Content Include="VSdoc\search_style.css" />
+    <Content Include="VSdoc\switch1--.html" />
+    <Content Include="VSdoc\switch2--.html" />
+    <Content Include="VSdoc\switch3--.html" />
+    <Content Include="VSdoc\SyntaxHighlighter\LGPLv3.txt" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\clipboard.swf" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushAS3.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushBash.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushCpp.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushCSharp.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushCss.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushDelphi.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushDiff.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushErlang.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushFSharp.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushGroovy.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushJava.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushJScript.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushPerl.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushPhp.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushPlain.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushPython.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushRuby.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushScala.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushSql.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushVb.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shBrushXml.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shCore.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shCore_helixoft.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\scripts\shLegacy.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\src\shCore.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\src\shCore_helixoft.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\src\shLegacy.js" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\help.png" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\magnifier.png" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\page_white_code.png" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\page_white_copy.png" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\printer.png" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\shCore.css" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\shThemeDefault.css" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\shThemeDjango.css" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\shThemeEclipse.css" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\shThemeEmacs.css" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\shThemeMidnight.css" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\shThemeMsdnLW.css" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\shThemeRDark.css" />
+    <Content Include="VSdoc\SyntaxHighlighter\styles\shThemeVS.css" />
+    <Content Include="VSdoc\title--.html" />
+    <Content Include="VSdoc\topic_0000000000000000.html" />
+    <Content Include="VSdoc\topic_0000000000000001.html" />
+    <Content Include="VSdoc\topic_0000000000000001_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000001_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000001_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000001_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000001_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000002.html" />
+    <Content Include="VSdoc\topic_0000000000000003.html" />
+    <Content Include="VSdoc\topic_0000000000000003_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000003_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000003_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000003_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000003_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000004.html" />
+    <Content Include="VSdoc\topic_0000000000000005.html" />
+    <Content Include="VSdoc\topic_0000000000000005_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000005_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000005_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000005_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000005_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000006.html" />
+    <Content Include="VSdoc\topic_0000000000000007.html" />
+    <Content Include="VSdoc\topic_0000000000000007_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000007_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000007_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000007_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000007_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000008.html" />
+    <Content Include="VSdoc\topic_0000000000000009.html" />
+    <Content Include="VSdoc\topic_0000000000000009_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000009_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000009_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000009_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000009_vars--.html" />
+    <Content Include="VSdoc\topic_000000000000000A.html" />
+    <Content Include="VSdoc\topic_000000000000000B.html" />
+    <Content Include="VSdoc\topic_000000000000000C.html" />
+    <Content Include="VSdoc\topic_000000000000000C_attached_props--.html" />
+    <Content Include="VSdoc\topic_000000000000000C_events--.html" />
+    <Content Include="VSdoc\topic_000000000000000C_methods--.html" />
+    <Content Include="VSdoc\topic_000000000000000C_props--.html" />
+    <Content Include="VSdoc\topic_000000000000000C_vars--.html" />
+    <Content Include="VSdoc\topic_000000000000000D.html" />
+    <Content Include="VSdoc\topic_000000000000000E.html" />
+    <Content Include="VSdoc\topic_000000000000000F.html" />
+    <Content Include="VSdoc\topic_0000000000000010.html" />
+    <Content Include="VSdoc\topic_0000000000000010_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000010_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000010_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000010_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000010_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000011.html" />
+    <Content Include="VSdoc\topic_0000000000000012.html" />
+    <Content Include="VSdoc\topic_0000000000000012_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000012_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000012_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000012_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000012_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000013.html" />
+    <Content Include="VSdoc\topic_0000000000000014.html" />
+    <Content Include="VSdoc\topic_0000000000000015.html" />
+    <Content Include="VSdoc\topic_0000000000000015_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000015_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000015_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000015_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000015_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000016.html" />
+    <Content Include="VSdoc\topic_0000000000000016_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000017.html" />
+    <Content Include="VSdoc\topic_0000000000000017_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000018.html" />
+    <Content Include="VSdoc\topic_0000000000000019.html" />
+    <Content Include="VSdoc\topic_000000000000001A.html" />
+    <Content Include="VSdoc\topic_000000000000001A_overloads--.html" />
+    <Content Include="VSdoc\topic_000000000000001B.html" />
+    <Content Include="VSdoc\topic_000000000000001B_overloads--.html" />
+    <Content Include="VSdoc\topic_000000000000001C.html" />
+    <Content Include="VSdoc\topic_000000000000001C_overloads--.html" />
+    <Content Include="VSdoc\topic_000000000000001D.html" />
+    <Content Include="VSdoc\topic_000000000000001D_overloads--.html" />
+    <Content Include="VSdoc\topic_000000000000001E.html" />
+    <Content Include="VSdoc\topic_000000000000001E_overloads--.html" />
+    <Content Include="VSdoc\topic_000000000000001F.html" />
+    <Content Include="VSdoc\topic_000000000000001F_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000020.html" />
+    <Content Include="VSdoc\topic_0000000000000021.html" />
+    <Content Include="VSdoc\topic_0000000000000021_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000022.html" />
+    <Content Include="VSdoc\topic_0000000000000022_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000023.html" />
+    <Content Include="VSdoc\topic_0000000000000024.html" />
+    <Content Include="VSdoc\topic_0000000000000024_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000025.html" />
+    <Content Include="VSdoc\topic_0000000000000025_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000026.html" />
+    <Content Include="VSdoc\topic_0000000000000027.html" />
+    <Content Include="VSdoc\topic_0000000000000028.html" />
+    <Content Include="VSdoc\topic_0000000000000028_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000029.html" />
+    <Content Include="VSdoc\topic_0000000000000029_overloads--.html" />
+    <Content Include="VSdoc\topic_000000000000002A.html" />
+    <Content Include="VSdoc\topic_000000000000002B.html" />
+    <Content Include="VSdoc\topic_000000000000002C.html" />
+    <Content Include="VSdoc\topic_000000000000002D.html" />
+    <Content Include="VSdoc\topic_000000000000002E.html" />
+    <Content Include="VSdoc\topic_000000000000002E_overloads--.html" />
+    <Content Include="VSdoc\topic_000000000000002F.html" />
+    <Content Include="VSdoc\topic_000000000000002F_attached_props--.html" />
+    <Content Include="VSdoc\topic_000000000000002F_events--.html" />
+    <Content Include="VSdoc\topic_000000000000002F_methods--.html" />
+    <Content Include="VSdoc\topic_000000000000002F_props--.html" />
+    <Content Include="VSdoc\topic_000000000000002F_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000030.html" />
+    <Content Include="VSdoc\topic_0000000000000031.html" />
+    <Content Include="VSdoc\topic_0000000000000032.html" />
+    <Content Include="VSdoc\topic_0000000000000033.html" />
+    <Content Include="VSdoc\topic_0000000000000033_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000033_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000033_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000033_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000033_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000034.html" />
+    <Content Include="VSdoc\topic_0000000000000034_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000035.html" />
+    <Content Include="VSdoc\topic_0000000000000035_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000036.html" />
+    <Content Include="VSdoc\topic_0000000000000037.html" />
+    <Content Include="VSdoc\topic_0000000000000038.html" />
+    <Content Include="VSdoc\topic_0000000000000039.html" />
+    <Content Include="VSdoc\topic_000000000000003A.html" />
+    <Content Include="VSdoc\topic_000000000000003A_overloads--.html" />
+    <Content Include="VSdoc\topic_000000000000003B.html" />
+    <Content Include="VSdoc\topic_000000000000003B_overloads--.html" />
+    <Content Include="VSdoc\topic_000000000000003C.html" />
+    <Content Include="VSdoc\topic_000000000000003D.html" />
+    <Content Include="VSdoc\topic_000000000000003E.html" />
+    <Content Include="VSdoc\topic_000000000000003E_overloads--.html" />
+    <Content Include="VSdoc\topic_000000000000003F.html" />
+    <Content Include="VSdoc\topic_000000000000003F_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000040.html" />
+    <Content Include="VSdoc\topic_0000000000000041.html" />
+    <Content Include="VSdoc\topic_0000000000000041_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000042.html" />
+    <Content Include="VSdoc\topic_0000000000000042_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000043.html" />
+    <Content Include="VSdoc\topic_0000000000000043_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000044.html" />
+    <Content Include="VSdoc\topic_0000000000000044_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000045.html" />
+    <Content Include="VSdoc\topic_0000000000000046.html" />
+    <Content Include="VSdoc\topic_0000000000000047.html" />
+    <Content Include="VSdoc\topic_0000000000000048.html" />
+    <Content Include="VSdoc\topic_0000000000000048_overloads--.html" />
+    <Content Include="VSdoc\topic_0000000000000049.html" />
+    <Content Include="VSdoc\topic_0000000000000051.html" />
+    <Content Include="VSdoc\topic_0000000000000051_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000051_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000051_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000051_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000051_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000052.html" />
+    <Content Include="VSdoc\topic_0000000000000053.html" />
+    <Content Include="VSdoc\topic_0000000000000053_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000053_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000053_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000053_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000053_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000054.html" />
+    <Content Include="VSdoc\topic_0000000000000055.html" />
+    <Content Include="VSdoc\topic_0000000000000056.html" />
+    <Content Include="VSdoc\topic_0000000000000056_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000056_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000056_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000056_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000056_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000057.html" />
+    <Content Include="VSdoc\topic_0000000000000058.html" />
+    <Content Include="VSdoc\topic_0000000000000058_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000058_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000058_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000058_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000058_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000059.html" />
+    <Content Include="VSdoc\topic_000000000000005A.html" />
+    <Content Include="VSdoc\topic_000000000000005A_attached_props--.html" />
+    <Content Include="VSdoc\topic_000000000000005A_events--.html" />
+    <Content Include="VSdoc\topic_000000000000005A_methods--.html" />
+    <Content Include="VSdoc\topic_000000000000005A_props--.html" />
+    <Content Include="VSdoc\topic_000000000000005A_vars--.html" />
+    <Content Include="VSdoc\topic_000000000000005B.html" />
+    <Content Include="VSdoc\topic_000000000000005C.html" />
+    <Content Include="VSdoc\topic_000000000000005D.html" />
+    <Content Include="VSdoc\topic_000000000000005E.html" />
+    <Content Include="VSdoc\topic_000000000000005F.html" />
+    <Content Include="VSdoc\topic_000000000000005F_attached_props--.html" />
+    <Content Include="VSdoc\topic_000000000000005F_events--.html" />
+    <Content Include="VSdoc\topic_000000000000005F_methods--.html" />
+    <Content Include="VSdoc\topic_000000000000005F_props--.html" />
+    <Content Include="VSdoc\topic_000000000000005F_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000060.html" />
+    <Content Include="VSdoc\topic_0000000000000061.html" />
+    <Content Include="VSdoc\topic_0000000000000062.html" />
+    <Content Include="VSdoc\topic_0000000000000063.html" />
+    <Content Include="VSdoc\topic_0000000000000064.html" />
+    <Content Include="VSdoc\topic_0000000000000065.html" />
+    <Content Include="VSdoc\topic_0000000000000065_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000065_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000065_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000065_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000065_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000066.html" />
+    <Content Include="VSdoc\topic_0000000000000067.html" />
+    <Content Include="VSdoc\topic_0000000000000067_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000067_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000067_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000067_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000067_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000068.html" />
+    <Content Include="VSdoc\topic_0000000000000069.html" />
+    <Content Include="VSdoc\topic_000000000000006A.html" />
+    <Content Include="VSdoc\topic_000000000000006B.html" />
+    <Content Include="VSdoc\topic_000000000000006B_attached_props--.html" />
+    <Content Include="VSdoc\topic_000000000000006B_events--.html" />
+    <Content Include="VSdoc\topic_000000000000006B_methods--.html" />
+    <Content Include="VSdoc\topic_000000000000006B_props--.html" />
+    <Content Include="VSdoc\topic_000000000000006B_vars--.html" />
+    <Content Include="VSdoc\topic_000000000000006C.html" />
+    <Content Include="VSdoc\topic_000000000000006D.html" />
+    <Content Include="VSdoc\topic_000000000000006E.html" />
+    <Content Include="VSdoc\topic_000000000000006F.html" />
+    <Content Include="VSdoc\topic_000000000000006F_attached_props--.html" />
+    <Content Include="VSdoc\topic_000000000000006F_events--.html" />
+    <Content Include="VSdoc\topic_000000000000006F_methods--.html" />
+    <Content Include="VSdoc\topic_000000000000006F_props--.html" />
+    <Content Include="VSdoc\topic_000000000000006F_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000070.html" />
+    <Content Include="VSdoc\topic_0000000000000071.html" />
+    <Content Include="VSdoc\topic_0000000000000072.html" />
+    <Content Include="VSdoc\topic_0000000000000073.html" />
+    <Content Include="VSdoc\topic_0000000000000074.html" />
+    <Content Include="VSdoc\topic_0000000000000074_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000074_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000074_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000074_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000074_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000075.html" />
+    <Content Include="VSdoc\topic_0000000000000076.html" />
+    <Content Include="VSdoc\topic_0000000000000076_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000076_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000076_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000076_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000076_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000077.html" />
+    <Content Include="VSdoc\topic_0000000000000078.html" />
+    <Content Include="VSdoc\topic_0000000000000079.html" />
+    <Content Include="VSdoc\topic_0000000000000079_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000079_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000079_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000079_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000079_vars--.html" />
+    <Content Include="VSdoc\topic_000000000000007A.html" />
+    <Content Include="VSdoc\topic_000000000000007B.html" />
+    <Content Include="VSdoc\topic_000000000000007B_attached_props--.html" />
+    <Content Include="VSdoc\topic_000000000000007B_events--.html" />
+    <Content Include="VSdoc\topic_000000000000007B_methods--.html" />
+    <Content Include="VSdoc\topic_000000000000007B_props--.html" />
+    <Content Include="VSdoc\topic_000000000000007B_vars--.html" />
+    <Content Include="VSdoc\topic_000000000000007C.html" />
+    <Content Include="VSdoc\topic_000000000000007D.html" />
+    <Content Include="VSdoc\topic_000000000000007E.html" />
+    <Content Include="VSdoc\topic_000000000000007E_attached_props--.html" />
+    <Content Include="VSdoc\topic_000000000000007E_events--.html" />
+    <Content Include="VSdoc\topic_000000000000007E_methods--.html" />
+    <Content Include="VSdoc\topic_000000000000007E_props--.html" />
+    <Content Include="VSdoc\topic_000000000000007E_vars--.html" />
+    <Content Include="VSdoc\topic_000000000000007F.html" />
+    <Content Include="VSdoc\topic_0000000000000080.html" />
+    <Content Include="VSdoc\topic_0000000000000081.html" />
+    <Content Include="VSdoc\topic_0000000000000082.html" />
+    <Content Include="VSdoc\topic_0000000000000083.html" />
+    <Content Include="VSdoc\topic_0000000000000084.html" />
+    <Content Include="VSdoc\topic_0000000000000084_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000084_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000084_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000084_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000084_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000085.html" />
+    <Content Include="VSdoc\topic_0000000000000086.html" />
+    <Content Include="VSdoc\topic_0000000000000087.html" />
+    <Content Include="VSdoc\topic_0000000000000087_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000087_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000087_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000087_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000087_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000088.html" />
+    <Content Include="VSdoc\topic_0000000000000089.html" />
+    <Content Include="VSdoc\topic_0000000000000089_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000089_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000089_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000089_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000089_vars--.html" />
+    <Content Include="VSdoc\topic_000000000000008A.html" />
+    <Content Include="VSdoc\topic_000000000000008B.html" />
+    <Content Include="VSdoc\topic_000000000000008C.html" />
+    <Content Include="VSdoc\topic_000000000000008C_attached_props--.html" />
+    <Content Include="VSdoc\topic_000000000000008C_events--.html" />
+    <Content Include="VSdoc\topic_000000000000008C_methods--.html" />
+    <Content Include="VSdoc\topic_000000000000008C_props--.html" />
+    <Content Include="VSdoc\topic_000000000000008C_vars--.html" />
+    <Content Include="VSdoc\topic_000000000000008D.html" />
+    <Content Include="VSdoc\topic_000000000000008E.html" />
+    <Content Include="VSdoc\topic_000000000000008F.html" />
+    <Content Include="VSdoc\topic_0000000000000090.html" />
+    <Content Include="VSdoc\topic_0000000000000090_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000090_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000090_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000090_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000090_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000091.html" />
+    <Content Include="VSdoc\topic_0000000000000092.html" />
+    <Content Include="VSdoc\topic_0000000000000092_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000092_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000092_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000092_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000092_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000093.html" />
+    <Content Include="VSdoc\topic_0000000000000094.html" />
+    <Content Include="VSdoc\topic_0000000000000095.html" />
+    <Content Include="VSdoc\topic_0000000000000095_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000095_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000095_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000095_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000095_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000096.html" />
+    <Content Include="VSdoc\topic_0000000000000097.html" />
+    <Content Include="VSdoc\topic_0000000000000098.html" />
+    <Content Include="VSdoc\topic_0000000000000098_attached_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000098_events--.html" />
+    <Content Include="VSdoc\topic_0000000000000098_methods--.html" />
+    <Content Include="VSdoc\topic_0000000000000098_props--.html" />
+    <Content Include="VSdoc\topic_0000000000000098_vars--.html" />
+    <Content Include="VSdoc\topic_0000000000000099.html" />
+    <Content Include="VSdoc\topic_000000000000009A.html" />
+    <Content Include="VSdoc\topic_000000000000009B.html" />
+    <Content Include="VSdoc\topic_000000000000009C.html" />
+    <Content Include="VSdoc\topic_000000000000009D.html" />
+    <Content Include="VSdoc\topic_000000000000009D_attached_props--.html" />
+    <Content Include="VSdoc\topic_000000000000009D_events--.html" />
+    <Content Include="VSdoc\topic_000000000000009D_methods--.html" />
+    <Content Include="VSdoc\topic_000000000000009D_props--.html" />
+    <Content Include="VSdoc\topic_000000000000009D_vars--.html" />
+    <Content Include="VSdoc\topic_000000000000009E.html" />
+    <Content Include="VSdoc\topic_000000000000009F.html" />
+    <Content Include="VSdoc\topic_00000000000000A0.html" />
+    <Content Include="VSdoc\Vidly_dyn_help.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -212,8 +795,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -236,12 +817,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customer\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
+    <Content Include="Views\Movies\CustomerForm.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -253,12 +838,43 @@
     <EmbeddedResource Include="Migrations\201802131444049_InitialModel.resx">
       <DependentUpon>201802131444049_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802140904060_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201802140904060_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802140923187_AddMembershipType.resx">
+      <DependentUpon>201802140923187_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802140928190_PopulateMembershipType.resx">
+      <DependentUpon>201802140928190_PopulateMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802141445181_MembershipType.resx">
+      <DependentUpon>201802141445181_MembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150639325_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201802150639325_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150843310_addNameMembershipType.resx">
+      <DependentUpon>201802150843310_addNameMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150847503_SetnameMembershipTypes.resx">
+      <DependentUpon>201802150847503_SetnameMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150858344_addBirtdateCustomer.resx">
+      <DependentUpon>201802150858344_addBirtdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150934464_classGenre.resx">
+      <DependentUpon>201802150934464_classGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151354266_addNullablePropertyForDateadded.resx">
+      <DependentUpon>201802151354266_addNullablePropertyForDateadded.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
