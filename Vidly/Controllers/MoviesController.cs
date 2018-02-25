@@ -47,16 +47,33 @@ namespace Vidly.Controllers
             var genres = _context.Genre.ToList();
             var viewModel = new MovieFormViewModel
             {
+                ReleaseDate = DateTime.Now,
+                NumberInStock =  0,
                 Genres = genres
             };
             return View("MovieForm",viewModel);
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MovieFormViewModel(movie)
+                {
+                    Genres = _context.Genre.ToList()
+                };
+
+                return View("MovieForm", viewModel);
+            }
+
             if (movie.Id == 0)
+            {
+                movie.DateAdded = DateTime.Now;
                 _context.Movie.Add(movie);
+            }
+               
             else
             {
                 // SingleOrDefault() is not used;because if customer is not found, it will trow an exception
@@ -78,9 +95,8 @@ namespace Vidly.Controllers
             if (movie == null)
                 return HttpNotFound();
 
-            var viewModel = new MovieFormViewModel()
+            var viewModel = new MovieFormViewModel(movie)
             {
-                Movie = movie,
                 Genres = _context.Genre.ToList()
             };
             return View("MovieForm", viewModel);
