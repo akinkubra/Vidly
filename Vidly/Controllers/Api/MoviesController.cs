@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using AutoMapper;
+using System.Data.Entity;
 using Microsoft.Ajax.Utilities;
 using Vidly.Dtos;
 using Vidly.Models;
@@ -21,9 +23,14 @@ namespace Vidly.Controllers.Api
         }
 
         // GET /api/movies
-        public IEnumerable<MovieDto> GetMovies()
+        public IHttpActionResult GetMovies()
         {
-            return _context.Movie.ToList().Select(Mapper.Map<Movie, MovieDto>);
+            var movieDtos = _context.Movie
+                .Include(m => m.Genre)
+                .ToList()
+                .Select(Mapper.Map<Movie, MovieDto>);
+
+            return Ok(movieDtos);
         }
 
         // GET /api/movies/1
@@ -56,33 +63,38 @@ namespace Vidly.Controllers.Api
 
         // PUT /api/movies/1
         [HttpPut]
-        public void Updatemovie(int id, MovieDto movieDto)
+        public IHttpActionResult Updatemovie(int id, MovieDto movieDto)
         {
             if (!ModelState.IsValid)
-                throw  new  HttpResponseException(HttpStatusCode.BadRequest);
+                return BadRequest();
 
             var movieInDb = _context.Movie.SingleOrDefault(m => m.Id == id);
 
-            if(movieInDb == null)
-                throw new HttpResponseException(HttpStatusCode.NotFound);
+            if (movieInDb == null)
+                return NotFound();
 
             Mapper.Map(movieDto, movieInDb);
 
             _context.SaveChanges();
 
+            return Ok(movieDto);
         }
 
         // DELETE /api/movies/1
         [HttpDelete]
-        public void DeleteMovie(int id)
+        public IHttpActionResult DeleteMovie(int id)
         {
             var movieInDb = _context.Movie.SingleOrDefault(m => m.Id == id);
 
-            if(movieInDb == null)
-                throw new HttpResponseException(HttpStatusCode.NotFound);
+            var movieList = _context.Movie.ToList().Select(Mapper.Map<Movie, MovieDto>);
+
+            if (movieInDb == null)
+                return NotFound();
 
             _context.Movie.Remove(movieInDb);
             _context.SaveChanges();
+
+            return Ok(movieList);
         }
     }
 }

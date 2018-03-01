@@ -2391,7 +2391,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
           box-shadow: 0 0 0 0.2rem rgba(255, 65, 54, 0.25);
 }
 
-.form-inline {
+/*.form-inline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2402,13 +2402,13 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
+}*/
 
 .form-inline .form-check {
   width: 100%;
 }
 
-@media (min-width: 576px) {
+/*@media (min-width: 576px) {
   .form-inline label {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2420,7 +2420,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 0;
-  }
+  }*/
   .form-inline .form-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4785,7 +4785,7 @@ tbody.collapse.show {
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-flex;
   padding-left: 0;
   list-style: none;
   border-radius: 0.25rem;
