@@ -30,7 +30,10 @@ namespace Vidly.Controllers
         {
             //var movies = _context.Movie.Include(m => m.Genre).ToList();
 
-            return View();
+            if (User.IsInRole(RoleName.CanManageMovie))
+                return View("List");
+
+            return View("ReadOnlyList");
         }
 
         public ActionResult Details(int id)
@@ -42,16 +45,17 @@ namespace Vidly.Controllers
 
             return View(movie);
         }
+        [Authorize(Roles = RoleName.CanManageMovie)]
         public ActionResult New()
         {
             var genres = _context.Genre.ToList();
             var viewModel = new MovieFormViewModel
             {
                 ReleaseDate = DateTime.Now,
-                NumberInStock =  0,
+                NumberInStock = 0,
                 Genres = genres
             };
-            return View("MovieForm",viewModel);
+            return View("MovieForm", viewModel);
         }
 
         [HttpPost]
@@ -73,7 +77,7 @@ namespace Vidly.Controllers
                 movie.DateAdded = DateTime.Now;
                 _context.Movie.Add(movie);
             }
-               
+
             else
             {
                 // SingleOrDefault() is not used;because if customer is not found, it will trow an exception
