@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Configuration;
+using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
+using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
+using Microsoft.Owin.Security.Facebook;
 using Owin;
 using Vidly.Models;
 
@@ -34,7 +37,7 @@ namespace Vidly
                         validateInterval: TimeSpan.FromMinutes(30),
                         regenerateIdentity: (manager, user) => user.GenerateUserIdentityAsync(manager))
                 }
-            });            
+            });
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
             // Enables the application to temporarily store user information when they are verifying the second factor in the two-factor authentication process.
@@ -57,6 +60,34 @@ namespace Vidly
             app.UseFacebookAuthentication(
                appId: "152853622066819",
                appSecret: "8436b7fd0601e38e94a96f49943110a0");
+
+            //var facebookOptions = new Microsoft.Owin.Security.Facebook.FacebookAuthenticationOptions()
+            //{
+            //    AppId = "152853622066819",
+            //    AppSecret = "8436b7fd0601e38e94a96f49943110a0",
+            //    Provider = new Microsoft.Owin.Security.Facebook.FacebookAuthenticationProvider()
+            //    {
+            //        OnAuthenticated = (context) =>
+            //        {
+            //            context.Identity.AddClaim(new System.Security.Claims.Claim("urn:facebook:access_token",
+            //                context.AccessToken, "Facebook"));
+            //            foreach (var x in context.User)
+            //            {
+            //                var claimType = string.Format("urn:facebook:{0}", x.Key);
+            //                string claimValue = x.Value.ToString();
+            //                if (!context.Identity.HasClaim(claimType, claimValue))
+            //                    context.Identity.AddClaim(
+            //                        new System.Security.Claims.Claim(claimType, claimValue, "Facebook"));
+
+            //            }
+
+            //            return Task.FromResult(0);
+            //        }
+            //    }
+
+            //};
+            //facebookOptions.Scope.Add("email");
+            //app.UseFacebookAuthentication(facebookOptions);
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
