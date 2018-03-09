@@ -9,8 +9,9 @@
         </div>
         <div class="navbar-collapse collapse" id="navbarColor01">
             <ul class="nav navbar-nav mr-auto">
-                <li class="nav-item">@Html.ActionLink("Customers", "Index", "Customer", new { area = "" }, new { @class = "nav-link" })</li>
-                <li class="nav-item">@Html.ActionLink("Movies", "Index", "Movies", new { area = "" }, new { @class = "nav-link" })</li>
+                <li class="nav-item">@Html.ActionLink("New Rental", "New", "Rentals", new { area = "" }, new { @class = "nav-link" })</li>
+                <li class="nav-item">@Html.ActionLink("Customers", "Index", "Customer", new {area = ""}, new {@class = "nav-link"})</li>
+                <li class="nav-item">@Html.ActionLink("Movies", "Index", "Movies", new {area = ""}, new {@class = "nav-link"})</li>
             </ul>
             @Html.Partial("_LoginPartial")
         </div>

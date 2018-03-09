@@ -216,14 +216,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\NewRentalsController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\RentalsController.cs" />
     <Compile Include="Dtos\CustomerDto.cs" />
     <Compile Include="Dtos\GenreDto.cs" />
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
+    <Compile Include="Dtos\NewRentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -272,12 +275,33 @@
     <Compile Include="Migrations\201802151354266_addNullablePropertyForDateadded.Designer.cs">
       <DependentUpon>201802151354266_addNullablePropertyForDateadded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803011408097_SeedUsers.cs" />
+    <Compile Include="Migrations\201803011408097_SeedUsers.Designer.cs">
+      <DependentUpon>201803011408097_SeedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803020735233_AddDrivingLicenseToApplicationUser.cs" />
+    <Compile Include="Migrations\201803020735233_AddDrivingLicenseToApplicationUser.Designer.cs">
+      <DependentUpon>201803020735233_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201803051155002_AddPhoneToApplicationUser.cs" />
     <Compile Include="Migrations\201803051155002_AddPhoneToApplicationUser.Designer.cs">
       <DependentUpon>201803051155002_AddPhoneToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803070734503_AddNumberAvailableToMovie.cs" />
+    <Compile Include="Migrations\201803070734503_AddNumberAvailableToMovie.Designer.cs">
+      <DependentUpon>201803070734503_AddNumberAvailableToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803070739413_AddRental.cs" />
+    <Compile Include="Migrations\201803070739413_AddRental.Designer.cs">
+      <DependentUpon>201803070739413_AddRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803080657541_SolveComplexity.cs" />
+    <Compile Include="Migrations\201803080657541_SolveComplexity.Designer.cs">
+      <DependentUpon>201803080657541_SolveComplexity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -285,6 +309,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
@@ -471,9 +496,14 @@
     <Content Include="Content\DataTables\images\sort_desc.png" />
     <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
     <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
+    <Content Include="Content\typeahead.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bloodhound.js" />
+    <Content Include="Scripts\bloodhound.min.js" />
     <Content Include="Scripts\bootbox.js" />
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -567,6 +597,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -588,6 +620,12 @@
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Scripts\typeahead.bundle.js" />
+    <Content Include="Scripts\typeahead.bundle.min.js" />
+    <Content Include="Scripts\typeahead.jquery.js" />
+    <Content Include="Scripts\typeahead.jquery.min.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
@@ -1067,12 +1105,15 @@
     <Content Include="VSdoc\topic_000000000000009F.html" />
     <Content Include="VSdoc\topic_00000000000000A0.html" />
     <Content Include="VSdoc\Vidly_dyn_help.xml" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -1119,8 +1160,11 @@
     <Content Include="Views\Movies\List.cshtml" />
     <Content Include="Views\Movies\ReadOnlyList.cshtml" />
     <Content Include="Vidly.vsdoc" />
+    <Content Include="Views\Rentals\New.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\NewRentals\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
@@ -1159,8 +1203,23 @@
     <EmbeddedResource Include="Migrations\201802151354266_addNullablePropertyForDateadded.resx">
       <DependentUpon>201802151354266_addNullablePropertyForDateadded.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803011408097_SeedUsers.resx">
+      <DependentUpon>201803011408097_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803020735233_AddDrivingLicenseToApplicationUser.resx">
+      <DependentUpon>201803020735233_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803051155002_AddPhoneToApplicationUser.resx">
       <DependentUpon>201803051155002_AddPhoneToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803070734503_AddNumberAvailableToMovie.resx">
+      <DependentUpon>201803070734503_AddNumberAvailableToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803070739413_AddRental.resx">
+      <DependentUpon>201803070739413_AddRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803080657541_SolveComplexity.resx">
+      <DependentUpon>201803080657541_SolveComplexity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
