@@ -135,6 +135,8 @@ namespace Vidly.Controllers
                     DrivingLicense = model.DrivingLicense,
                     Phone = model.Phone
                 };
+
+
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
